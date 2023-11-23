@@ -16,5 +16,7 @@ Ce projet est le fruit d'une collaboration entre moi-même et Jospin. Chaque mem
 ## Licence
 ()
 
+## Collaboration
+Ce projet nous allons collabore avec madicke. Chacun de nous doit apporter son apport technique.
 ---
 *Ce fichier README sera mis à jour au fur et à mesure de l'avancement du projet.*
