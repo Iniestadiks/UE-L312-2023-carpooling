@@ -4,47 +4,39 @@ namespace App\Entities;
 
 use DateTime;
 
-// Classe représentant une réservation.
 class Reservation
 {
-    // Propriétés de la classe
     private $id;
     private $reservationDate;
-    private $status;
+    private $address;
 
-    // Getter pour l'ID de la réservation
     public function getId(): string
     {
         return $this->id;
     }
 
-    // Setter pour l'ID de la réservation
     public function setId(string $id): void
     {
         $this->id = $id;
     }
 
-    // Getter pour la date de la réservation
     public function getReservationDate(): DateTime
     {
         return $this->reservationDate;
     }
 
-    // Setter pour la date de la réservation
     public function setReservationDate(DateTime $reservationDate): void
     {
         $this->reservationDate = $reservationDate;
     }
 
-    // Getter pour le statut de la réservation
-    public function getStatus(): string
+    public function getAddress(): string
     {
-        return $this->status;
+        return $this->address;
     }
 
-    // Setter pour le statut de la réservation
-    public function setStatus(string $status): void
+    public function setAddress(string $address): void
     {
-        $this->status = $status;
+        $this->address = $address;
     }
 }
