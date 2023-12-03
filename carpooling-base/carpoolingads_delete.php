@@ -5,22 +5,13 @@ use App\Controllers\CarpoolingAdsController;
 require __DIR__ . '/vendor/autoload.php';
 
 $controller = new CarpoolingAdsController();
-echo $controller->updateCarpoolingAd();
+echo $controller->deleteCarpoolingAd();
 ?>
 
-<p>Mise à jour d'une annonce de covoiturage</p>
-<form method="post" action="carpoolingads_update.php" name="carpoolingAdUpdateForm">
+<p>Suppression d'une annonce de covoiturage</p>
+<form method="post" action="carpooling_delete.php" name ="carpoolingDeleteForm">
     <label for="id">Id :</label>
     <input type="text" name="id">
     <br />
-    <label for="title">Titre :</label>
-    <input type="text" name="title">
-    <br />
-    <label for="description">Description :</label>
-    <textarea name="description"></textarea>
-    <br />
-    <label for="price">Prix :</label>
-    <input type="number" name="price" step="0.01">
-    <br />
-    <input type="submit" value="Modifier l'annonce">
+    <input type="submit" value="Supprimer une annonce">
 </form>
