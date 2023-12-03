@@ -9,7 +9,7 @@ echo $controller->deleteReservation();
 ?>
 
 <p>Suppression d'une réservation</p>
-<form method="post" action="reservations_delete.php" name="reservationDeleteForm">
+<form method="post" action="reservation_delete.php" name ="reservationDeleteForm">
     <label for="id">Id :</label>
     <input type="text" name="id">
     <br />

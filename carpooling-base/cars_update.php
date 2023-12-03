@@ -9,9 +9,9 @@ echo $controller->updateCar();
 ?>
 
 <p>Mise à jour d'une voiture</p>
-<form method="post" action="cars_update.php" name="carUpdateForm">
+<form method="post" action="car_update.php" name="carUpdateForm">
     <label for="id">Id :</label>
-    <input type="text" name="id">
+    <input type="number" name="id">
     <br />
     <label for="brand">Marque :</label>
     <input type="text" name="brand">
@@ -22,8 +22,8 @@ echo $controller->updateCar();
     <label for="color">Couleur :</label>
     <input type="text" name="color">
     <br />
-    <label for="year">Année :</label>
-    <input type="number" name="year">
+    <label for="nbrSlots">Nombre de places :</label>
+    <input type="number" name="nbrSlots">
     <br />
     <input type="submit" value="Modifier la voiture">
 </form>

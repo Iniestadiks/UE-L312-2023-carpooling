@@ -9,7 +9,7 @@ echo $controller->deleteCar();
 ?>
 
 <p>Suppression d'une voiture</p>
-<form method="post" action="cars_delete.php" name="carDeleteForm">
+<form method="post" action="car_delete.php" name ="carDeleteForm">
     <label for="id">Id :</label>
     <input type="text" name="id">
     <br />

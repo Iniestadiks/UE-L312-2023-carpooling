@@ -9,7 +9,7 @@ echo $controller->createCar();
 ?>
 
 <p>Création d'une voiture</p>
-<form method="post" action="cars_create.php" name="carCreateForm">
+<form method="post" action="car_create.php" name ="carCreateForm">
     <label for="brand">Marque :</label>
     <input type="text" name="brand">
     <br />
@@ -19,8 +19,8 @@ echo $controller->createCar();
     <label for="color">Couleur :</label>
     <input type="text" name="color">
     <br />
-    <label for="year">Année :</label>
-    <input type="number" name="year">
+    <label for="nbrSlots">Nombre de places :</label>
+    <input type="number" name="nbrSlots">
     <br />
     <input type="submit" value="Créer une voiture">
 </form>

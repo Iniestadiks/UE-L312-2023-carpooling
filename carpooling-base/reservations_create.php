@@ -6,11 +6,12 @@ require __DIR__ . '/vendor/autoload.php';
 
 $controller = new ReservationsController();
 echo $controller->createReservation();
+
 ?>
 
 <p>Création d'une réservation</p>
-<form method="post" action="reservations_create.php" name="reservationCreateForm">
-    <label for="reservationDate">Date de réservation au format dd-mm-yyyy :</label>
+<form method="post" action="reservation_create.php" name ="reservationCreateForm">
+    <label for="reservationDate">Date de réservation (format yyyy-mm-dd) :</label>
     <input type="text" name="reservationDate">
     <br />
     <label for="address">Adresse :</label>

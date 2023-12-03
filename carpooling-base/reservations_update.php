@@ -9,11 +9,11 @@ echo $controller->updateReservation();
 ?>
 
 <p>Mise à jour d'une réservation</p>
-<form method="post" action="reservations_update.php" name="reservationUpdateForm">
+<form method="post" action="reservation_update.php" name="reservationUpdateForm">
     <label for="id">Id :</label>
-    <input type="text" name="id">
+    <input type="number" name="id">
     <br />
-    <label for="reservationDate">Date de réservation au format dd-mm-yyyy :</label>
+    <label for="reservationDate">Date de réservation (format yyyy-mm-dd) :</label>
     <input type="text" name="reservationDate">
     <br />
     <label for="address">Adresse :</label>

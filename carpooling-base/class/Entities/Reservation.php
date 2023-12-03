@@ -15,9 +15,11 @@ class Reservation
         return $this->id;
     }
 
-    public function setId(string $id): void
+    public function setId(string $id): self
     {
         $this->id = $id;
+
+        return $this;
     }
 
     public function getReservationDate(): DateTime
@@ -25,9 +27,11 @@ class Reservation
         return $this->reservationDate;
     }
 
-    public function setReservationDate(DateTime $reservationDate): void
+    public function setReservationDate(DateTime $reservationDate): self
     {
         $this->reservationDate = $reservationDate;
+
+        return $this;
     }
 
     public function getAddress(): string
@@ -35,8 +39,10 @@ class Reservation
         return $this->address;
     }
 
-    public function setAddress(string $address): void
+    public function setAddress(string $address): self
     {
         $this->address = $address;
+
+        return $this;
     }
 }

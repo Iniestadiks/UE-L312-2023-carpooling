@@ -11,6 +11,9 @@ class User
     private $lastname;
     private $email;
     private $birthday;
+    private $cars;
+    private $carpoolingAds;
+    private $reservations;
 
     public function getId(): string
     {
@@ -60,5 +63,49 @@ class User
     public function setBirthday(DateTime $birthday): void
     {
         $this->birthday = $birthday;
+    }
+
+    public function getCars(): ?array
+    {
+        return $this->cars;
+    }
+
+    public function setCars(array $cars)
+    {
+        $this->cars = $cars;
+
+        return $this;
+    }
+    /**
+     * Get carpooling ads associated with the user.
+     */
+    public function getCarpoolingAds(): ?array
+    {
+        return $this->carpoolingAds;
+    }
+
+    /**
+     * Set carpooling ads for the user.
+     */
+    public function setCarpoolingAds(array $carpoolingAds)
+    {
+        $this->carpoolingAds = $carpoolingAds;
+
+        return $this;
+    }
+
+    public function getReservations(): ?array
+    {
+        return $this->reservations;
+    }
+
+    /**
+     * Set reservations for the user.
+     */
+    public function setReservations(array $reservations)
+    {
+        $this->reservations = $reservations;
+
+        return $this;
     }
 }
