@@ -4,8 +4,8 @@ use App\Controllers\CarsController;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$controller = new CarsController();
-echo $controller->deleteCar();
+$carController = new CarsController();
+echo $carController->deleteCar();
 ?>
 
 <p>Suppression d'une voiture</p>

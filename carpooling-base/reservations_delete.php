@@ -4,8 +4,8 @@ use App\Controllers\ReservationsController;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$controller = new ReservationsController();
-echo $controller->deleteReservation();
+$reservationsController  = new ReservationsController();
+echo $reservationsController->deleteReservation();
 ?>
 
 <p>Suppression d'une réservation</p>

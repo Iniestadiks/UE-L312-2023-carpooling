@@ -5,8 +5,8 @@ use App\Services\CarsService;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$controller = new CarpoolingAdsController();
-echo $controller->createCarpoolingAd();
+$carpoolingadsController  = new CarpoolingAdsController();
+echo $carpoolingadsController->createCarpoolingAd();
 
 $carsService = new CarsService();
 $cars = $carsService->getCars();

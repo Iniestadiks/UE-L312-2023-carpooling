@@ -4,8 +4,8 @@ use App\Controllers\CarpoolingAdsController;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$controller = new CarpoolingAdsController();
-echo $controller->deleteCarpoolingAd();
+$carpoolingadsController  = new CarpoolingAdsController();
+echo $carpoolingadsController->deleteCarpoolingAd();
 ?>
 
 <p>Suppression d'une annonce de covoiturage</p>

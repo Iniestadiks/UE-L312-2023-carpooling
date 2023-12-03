@@ -4,8 +4,8 @@ use App\Controllers\CarpoolingAdsController;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$controller = new CarpoolingAdsController();
-echo $controller->updateCarpoolingAd();
+$carpoolingadsController = new CarpoolingAdsController();
+echo $carpoolingadsController->updateCarpoolingAd();
 ?>
 
 <p>Mise à jour d'une annonce de covoiturage</p>

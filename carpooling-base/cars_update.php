@@ -4,8 +4,8 @@ use App\Controllers\CarsController;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$controller = new CarsController();
-echo $controller->updateCar();
+$carController = new CarsController();
+echo $carController->updateCar();
 ?>
 
 <p>Mise à jour d'une voiture</p>
